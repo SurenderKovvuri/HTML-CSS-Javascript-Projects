@@ -1,0 +1,207 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: black;
+    color: white;
+}
+body {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+      "s c c c c c c c c c"
+      "s f f f f f f f f f";
+}
+.sidebar {
+  grid-area: s;
+}
+.content {
+  grid-area: c;
+}
+.footer {
+  grid-area: f;
+}
+.sidebar {
+    min-width: 200px;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    border-right: 1px solid #415a77;
+    flex-direction: column;
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+}
+.social-links img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.profile {
+    text-align: center;
+    display: block;
+    background-color: #415a77;
+    padding: 20px 0px;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.profile h1 {
+    margin: 10px 0 5px;
+    font-size: 2rem;
+}
+
+.profile p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav ul li {
+    margin: 2rem 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav ul li a:hover{
+    display: block;
+    background-color: #415a77;
+    padding: 10px;
+}
+.social-links a {
+    font-size: 24px;
+    color: #e0e1dd;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 120px 200px 0px 100px;
+}
+#intro p{
+    font-size: 1.6rem;
+}
+#intro h1{
+    font-size: 4rem;
+}
+.content section {
+    margin-bottom: 40px;
+}
+
+#Hello{
+    color: yellow;
+}
+#work{
+    padding-top: 50px;
+}
+#work h2, #writings h2{
+    font-size: 2rem;
+}
+#writings{
+    padding-top: 2rem;
+}
+.work-item{
+    display: flex;
+}
+.writing-item{
+    display: flex;
+    gap: 3rem;
+}
+.work-item img{
+    width: 20%;
+    height: 20%;
+}
+.work-item, .writing-items {
+    background-color: #0b2f3d;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+}
+.work-items{
+    padding: 1.2rem;
+}
+.work-items p{
+    color: whitesmoke;
+    padding: 1rem 0px;
+}
+.work-items a{
+    text-decoration: none;
+    color: yellow;
+}
+.work-items h3, .writing-items h3 {
+    font-size: 1.5rem;
+    margin: 0 0 10px;
+}
+
+.work-items p{
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+.writing-items{
+    padding: 2rem;
+}
+.writing-items h3{
+    padding-top: 1rem;
+}
+.writing-items img{
+    width: 100%;
+    height: 60%;
+}
+.name img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.read{
+    font-size: 1rem;
+}
+.contact h2{
+    font-size: 1.8rem;
+}
+.contact p{
+    font-size: 1.5rem;
+}
+button {
+    background-color: black;
+    color: yellow;
+    border: 1px solid yellow;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.footer {
+    text-align: center;
+    padding: 40px;
+    margin: 0 auto;
+    color: yellow;
+}
+.footer h3{
+    font-size: 1.5rem;
+}
+.footer a {
+    color: yellow;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
